@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Panton Regular';
+    src: url('../fonts/Panton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Bold';
+    src: url('../fonts/Panton-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton Black';
+    src: url('../fonts/Panton-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Panton Regular', sans-serif;
+	overflow-x: hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong{
+	font-weight: 800;
+}
+
+div.interface{
+	min-width:320px;
+	max-width:1200px;
+	width:100%;
+	margin:0px auto;
+    text-align: center;
+    position: relative;
+}
+
+a#whatsapp-botao{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999999999;
+}
+
+a#whatsapp-botao img{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+	display: block;
+	width: 100%;
+	background-image:url(kin.png) left top no-repeat;
+    padding-bottom: 40px;
+}
+
+a#central{
+	display: block;
+	width: 270px;
+	margin: 0 auto;
+	background-color: #fff200;
+	color: #172d4a;
+    font-size: 19px;
+    font-family: 'Panton Bold', sans-serif;
+	border-radius: 0 0 10px 10px;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+a#central img{
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #0153ff;
+	padding: 10px 5px;
+	margin-left: -14px;
+	margin-right: 10px;
+	border-radius: 0 0 0 10px;
+}
+
+a#central:hover{
+	background-color: #0153ff;
+}
+
+img#logo{
+	display: inline-block;
+	margin-top: 40px;
+}
+
+header span{
+    display: inline-block;
+    width: 90%;
+    margin-top: 30px;
+    color: #fff;
+    line-height: normal;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+section#planos{
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #0e0d0d;
+margin-top:  0px;
+}
+
+section#planos a#chat{
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #009e00;
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+section#planos a#chat img{
+    position: absolute;
+    right: -10px;
+    top: -30px;
+}
+
+section#planos a#chat:hover{
+    background-color: #00ff00;
+}
+
+section#planos h1{
+    display: inline-block;
+    width: 90%;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: normal;
+}
+
+section#planos h1 strong{
+    font-family: 'Panton Black', sans-serif;
+}
+
+section#planos ul {
+    display: inline-block;
+    margin-top: 30px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+section#planos ul li {
+    display: inline-block;
+    cursor: pointer;
+    color: #172d4a;
+    border: 1px solid #fff;
+    font-family: 'Panton Bold', sans-serif;
+    padding: 10px 23px;
+    margin: 2px -3px;
+    border-radius: 20px;
+    font-size: 17px;
+    word-wrap: break-word;
+    transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+}
+
+section#planos ul li.ativo, section#planos ul li:hover {
+    color: #172d4a;
+    border: 1px solid #ffc800;
+    background-color: #ffc800;
+}
+
+section#planos div.plano{
+    display: inline-block;
+    width: 250px;
+    box-shadow: 0 0 10px #fff;
+    margin: 60px 20px 0 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+section#planos div.plano span.velocidade{
+    display: inline-block;
+    width: 100%;
+    color: #023f88;
+    border-radius: 15px 15px 0 0;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: 'Panton Black', sans-serif;
+}
+
+section#planos div.plano span.valor{
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 25px;
+    background-color: #023f88;
+}
+
+section#planos div.plano span.valor strong{
+    font-family: 'Panton Bold', sans-serif;
+    font-size: 35px;
+}
+
+section#planos div.plano a{
+    position: absolute;
+    bottom: -25px;
+    padding: 10px 20px;
+    background-color: #ff5e00;
+    left: 60px;
+    color: #fff;
+    font-family: 'Panton Bold', sans-serif;
+    font-size: 20px;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+section#planos div.plano a:hover{
+    padding: 10px 30px;
+    left: 50px;
+}
+
+section#planos p#aviso{
+    display: inline-block;
+    width: 90%;
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 60px;
+    text-align: right;
+}
+
+footer{
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #0e0d0d;
+}
+
+footer div#contato{
+    display: inline-block;
+    font-size: 14px;
+    line-height: normal;
+    margin: 0 20px;
+    color: #333;
+}
+
+footer a{
+    display: inline-block;
+    margin: 20px 20px 0 20px;
+}
+
+@media screen and (min-width:360px){
+    section#planos ul {
+        width: 520px;
+        
+    }
+   
+    header{ 
+        display: block;
+        
+      box-shadow: 10px 5px 10px rgba(2, 172, 30, 0.486);
+       background-color: rgb(12, 12, 12);
+         padding-bottom: 0;
+         height: 250px;
+   
+    }
+    section#planos a#chat{
+        float: right;
+        margin-right: 85px;
+        margin-top: 15px;
+    }
+
+    section#planos h1{
+        font-size: 45px;
+        text-shadow: 0 0 15px #fff200;
+      
+    }
+    #kin{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px;
+       
+    }
+   li#fibra-escolha.ativo{
+   margin-right: 150px;
+   }
+
+    footer div#contato{
+        float:center;
+    }
+
+    footer a{
+        float: right;
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    header{ 
+       display: block;
+       
+     box-shadow: 10px 5px 10px rgba(2, 172, 30, 0.486);
+      background-color: rgb(27, 27, 27);
+        padding-bottom: 0;
+        height: 100px;
+        
+    }
+    #kin{
+       display: flex;
+       justify-content: flex-start;
+     border-radius: 50%;
+     top: 0;
+     left: 0;
+     position: absolute;
+     border: 2px solid rgb(155, 245, 103);
+    }
+    img#logo{
+        float: left;
+        margin-left: 30px;
+        margin-top: 90px;
+        margin-bottom: 80px;
+    }
+
+    header span{
+        display: flex;
+        margin: 70px 0 0 30px;
+        width: 400px;
+        font-size: 40px;
+        text-align: left;
+        
+    }
+
+    section#planos h1{
+        font-size: 50px;
+    }
+}

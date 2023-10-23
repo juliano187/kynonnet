@@ -1,0 +1,1 @@
+$((function(){var i="#fibra-escolha",a="#radio-escolha",o=$("#fibra"),s=$("#radio");$(s).hide(),$(a).click((function(){$(i).removeClass("ativo"),$(a).addClass("ativo"),$(o).slideUp(500,(function(){$(o).hide()})),$(s).slideDown(500)})),$(i).click((function(){$(a).removeClass("ativo"),$(i).addClass("ativo"),$(s).slideUp(500,(function(){$(s).hide()})),$(o).slideDown(500)}))}));
